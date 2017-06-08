@@ -16,5 +16,5 @@ var server = http.createServer(app).listen(port, host, function() {
 });
 
 app.get('/', function(req, res) {
-	res.send( effects[Math.floor(Math.random() * jokes.length)] );
+	res.send( effects[Math.floor(Math.random() * effects.length)].effect );
 });
